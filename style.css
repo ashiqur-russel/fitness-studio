@@ -3,6 +3,20 @@
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(238, 238, 238);
+}
+.company-logo {
+    display: flex;
+}
+.company-logo img{
+    width: auto;
+    height: 50px;
+}
 .menu-container {
     display: flex;
     justify-content: space-evenly;
@@ -14,12 +28,18 @@
 
 .menu-item{
     display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-left: 600px;
+
 }
 
 .menu-item li {
     list-style: none;
     margin: 5px;
     padding: 10px;
+    text-transform: uppercase;
+    
 }
 
 .menu-item li:hover{
@@ -64,13 +84,12 @@
 }
 
 .banner-btn{
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #ff4e1d;
     margin: 8px;
     cursor: pointer;
     text-transform:uppercase ;
     font-weight: bold;
-    border-radius: 30px;
     border: none;
 }
 
@@ -84,14 +103,14 @@
 .zu-hause-container{
     height: 80vh; 
     width: 100%; 
-    position:absolute;
     display: flex;
     justify-content: center;
+    color: black;
 }
 
 .half{
     flex:1;
-    background-color: #1b1b1b;
+ 
 }
 
 .image-holder{
@@ -105,10 +124,59 @@
     height: auto;
   }
 
+
+
  .half .desc{
     height: 60%;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-top: 20%;
   }
 
 
+.conatiner{
+    height: 70vh;
+    width: 100%;
+
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+.package-conatainer{
+    height: 80vh; 
+    width: 100%; 
+    position:absolute;
+    display: flex;
+    justify-content: center;
+   
+    background-color: #ef3608;
+    flex-direction: column;
+   
+}
+
+.half-packages{
+    flex: 1;
+    height: 100%;
+}
+.packages  {
+    display: flex;
+    padding: 20px;
+    height: 70%;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 20px;
+}
+
+.packages > div {
+    height: 50%;
+    justify-content: space-around;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.package-conatainer h1 {
+    text-align: center;
+    margin-top: 30px;
+}
